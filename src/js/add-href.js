@@ -17,7 +17,7 @@
     const currentDir = window
       .location
       .href
-      .match(/^((.*?)\/WP-CLI.docset\/Contents\/Resources\/Documents).*?$/)[1]
+      .match(/^((.*?)\/FP-CLI.docset\/Contents\/Resources\/Documents).*?$/)[1]
     const relativePath = element.getAttribute('data-relative-href')
     element.setAttribute('href', currentDir + relativePath)
   }

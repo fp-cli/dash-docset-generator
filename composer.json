@@ -1,15 +1,15 @@
 {
-  "name": "wp-cli/dash-docset-generator",
-  "description": "Generates Dash docsets for WP-CLI",
+  "name": "fp-cli/dash-docset-generator",
+  "description": "Generates Dash docsets for FP-CLI",
   "version": "1.2.0",
   "type": "project",
   "keywords": [
     "dash",
     "docset",
-    "wp-cli",
-    "wordpress"
+    "fp-cli",
+    "finpress"
   ],
-  "homepage": "https://github.com/wp-cli/dash-docset-generator",
+  "homepage": "https://github.com/fp-cli/dash-docset-generator",
   "license": "MIT",
   "authors": [
     {

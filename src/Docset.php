@@ -42,7 +42,7 @@ final class Docset
      */
     private function getRelativePathTo(string $resource)
     {
-        $docsetPath = 'WP-CLI.docset';
+        $docsetPath = 'FP-CLI.docset';
         $path = "{$docsetPath}/Contents/Resources";
         switch ($resource) {
             case 'db':
@@ -80,8 +80,8 @@ final class Docset
         $this->saveHtml($dir);
         $zippy = Zippy::load();
         $zippy->create(
-            "{$dir}/WP-CLI.tgz", [
-                'WP-CLI.docset' => "{$dir}/{$this->getRelativePathTo('docset')}"
+            "{$dir}/FP-CLI.tgz", [
+                'FP-CLI.docset' => "{$dir}/{$this->getRelativePathTo('docset')}"
             ]
         );
     }

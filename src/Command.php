@@ -151,7 +151,7 @@ class Command
             "{$dir}/{$this->getShortName()}.html",
             $this->twig->render('command.html.twig', [
                 'fallbackUrl' => $fallbackUrl,
-                'title' => "wp {$this->name}",
+                'title' => "fp {$this->name}",
                 'css' => $css,
                 'bodyHtml' => $this->getBodyHtml(),
                 'subcommandHtml' => $this->getSubcommandHtml(),

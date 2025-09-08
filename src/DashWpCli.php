@@ -52,8 +52,8 @@ final class DashWpCli
         $ghRepo = $gh->api('repo');
         /** @var GitData $ghGitData */
         $ghGitData = $gh->api('gitData');
-        $ghWpCliOrg = Constants::GITHUB_WP_CLI_ORG;
-        $ghHandbookRepo = Constants::GITHUB_WP_CLI_HANDBOOK_REPO;
+        $ghWpCliOrg = Constants::GITHUB_FP_CLI_ORG;
+        $ghHandbookRepo = Constants::GITHUB_FP_CLI_HANDBOOK_REPO;
         $releases = $ghRepo
             ->releases()
             ->all($ghWpCliOrg, $ghHandbookRepo);
@@ -100,7 +100,7 @@ final class DashWpCli
                         );
                         $zippy->open($tarFile)->extract($versionsDir);
                         rename(
-                            "{$versionsDir}/wp-cli-handbook-{$hash}",
+                            "{$versionsDir}/fp-cli-handbook-{$hash}",
                             "{$versionsDir}/{$version}"
                         );
                         unlink($tarFile);

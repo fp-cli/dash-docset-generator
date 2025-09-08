@@ -2,5 +2,5 @@ composer.phar
 src/versions/*
 vendor
 versions/*
-WP-CLI.docset
-WP-CLI.tgz
+FP-CLI.docset
+FP-CLI.tgz

@@ -1,11 +1,11 @@
-builtFiles = versions WP-CLI.tgz
+builtFiles = versions FP-CLI.tgz
 
 .PHONY: all
 all: $(builtFiles)
 
 .PHONY: clean
 clean:
-	rm -rf composer.phar src/versions vendor versions WP-CLI.docset WP-CLI.tgz
+	rm -rf composer.phar src/versions vendor versions FP-CLI.docset FP-CLI.tgz
 
 $(builtFiles): vendor
 	php build.php

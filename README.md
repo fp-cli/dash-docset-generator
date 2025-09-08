@@ -1,6 +1,6 @@
-# WP-CLI Dash Docset Generator
+# FP-CLI Dash Docset Generator
 
-This project generates [Dash](https://kapeli.com/dash) [docsets](https://kapeli.com/docsets) for [all versions](https://github.com/wp-cli/handbook/releases) of the WP-CLI commands documentation.
+This project generates [Dash](https://kapeli.com/dash) [docsets](https://kapeli.com/docsets) for [all versions](https://github.com/fp-cli/handbook/releases) of the FP-CLI commands documentation.
 
 ## Supported Dash features
 
@@ -23,7 +23,7 @@ You’ll need the following software to generate the docsets:
 Run `make` to generate the docsets:
 
 ```
-$ git clone git@github.com:wp-cli/dash-docset-generator.git
+$ git clone git@github.com:fp-cli/dash-docset-generator.git
 $ cd dash-docset-generator
 $ make
 ```
@@ -34,11 +34,11 @@ This will generate the following files:
 .
 ├─ versions              ← Versioned docsets
 │  ├─ X.X.X              ← e.g. 1.2.0
-│  │  ├─ WP-CLI.docset   ← Docset
-│  │  └─ WP-CLI.tgz      ← Compressed docset
+│  │  ├─ FP-CLI.docset   ← Docset
+│  │  └─ FP-CLI.tgz      ← Compressed docset
 │  └─ ...
-├─ WP-CLI.docset         ← Docset for latest version
-└─ WP-CLI.tgz            ← Compressed docset for latest version
+├─ FP-CLI.docset         ← Docset for latest version
+└─ FP-CLI.tgz            ← Compressed docset for latest version
 ```
 
 ### Submitting generated docsets
